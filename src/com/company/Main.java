@@ -10,6 +10,8 @@ public class Main {
         long d = 123456L;
         float f = 5.7F;
         double e = 12.35;
+        char n = 'n';
+        boolean t = true;
 
         //Задание 2
         float weightOfFirstBoxer = 78.2F;
@@ -21,12 +23,16 @@ public class Main {
 
         //Задание 3
         byte weightBanana = 80;
-        byte weightMilk = 105;
+        byte numberOfBananas = 5;
+        byte weightMilkPer100Ml = 105;
+        byte numberOfServingsMilk = 2;
         byte weightIceCream = 100;
+        byte numberOfServingsIceCream = 2;
         byte weightEgg = 70;
+        byte numberOfEggs = 4;
 
 
-        float breakfastWeight = weightBanana * 5 + weightMilk * 2 + weightIceCream * 2 + weightEgg * 4;
+        float breakfastWeight = weightBanana * numberOfBananas + weightMilkPer100Ml * numberOfServingsMilk + weightIceCream * numberOfServingsIceCream + weightEgg * numberOfEggs;
         float breakfastWeightKg = breakfastWeight / 1000;
         System.out.println("Вес готового спорт-завтрака " + breakfastWeightKg + " кг");
 
